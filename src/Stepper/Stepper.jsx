@@ -1,6 +1,6 @@
 import './Stepper.css';
 import React, { Component } from 'react';
-
+let backgroundColor='';
 
 //Aqui se crea la vista para mostrar inicializando los valores
 class Stepper extends Component {
@@ -29,27 +29,46 @@ if(this.state.num<this.state.max){
 resta(){
   if(this.state.num > this.state.min){
      this.setState({num: this.state.num -=1});
-     console.log(this.state.num)
+    //  console.log(this.state.num)
+    
+  
 }
 
 
 }
+
 
 //devolver vista
 render() { 
-  let backgroundColor='';
-  let style= {backgroundColor};
-  if(this.state.num>5){
-    backgroundColor='green'
+  if(this.state.num<5){
+    window.open("src=\'./images/boom.gif\'","","width=550,height=420")
+
+    backgroundColor='green';
   }
-  // let style = backgroundColor;
-  // console.log(backgroundColor);
+  else if (this.state.num===5) {
+    backgroundColor='lightblue';
   
-  // if(this.state.num==0 ) {
-    
+  }
+  else if (this.state.num===20) {
+        //  window.open(<img src="dinosaur.jpg">,"","width=550,height=420")
+window.open("src='./images/boom.gif'","","width=550,height=420")
+    // window.open("href='./public/images/boom.gif'","","width=550,height=420")
+  
+  }
+  else if (this.state.num>=10) {
+    backgroundColor='red';
+    console.log(this.state.num);
 
   
-  // }
+  }
+  else if (this.state.num>5) {
+    backgroundColor='yellow';
+  
+  }
+  
+ 
+  let style= {backgroundColor};
+
        return (
           <div className="Stepper">
             <button onClick={this.suma.bind(this)}>+</button>
