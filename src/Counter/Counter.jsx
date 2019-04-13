@@ -12,13 +12,14 @@ class Counter extends Component {
     
     this.state = {
       fontSize: 17,
+      backgroundColor: '',
       num: props.startFrom || 0
 
     }
   }
 
   suma() {
-    console.log(this.state.fontSize);
+    console.log(this.state.num);
 
     this.setState({ num: this.state.num += this.props.step || 1,   fontSize: this.state.fontSize += 1  });
     // fontSize=fontSize + 1 ;
@@ -32,7 +33,12 @@ class Counter extends Component {
 
   //devolver vista
   render() {
-   let style={fontSize: this.state.fontSize + "px"};
+    console.log();
+    let style={fontSize: this.state.fontSize + "px", };
+    if(this.state.num === 0){
+      style={fontSize: this.state.fontSize + "px", backgroundColor: this.state.backgroundColor = 'red'};
+    }
+   
     return (
       <span className="Counter">
         <button style={style} onClick={this.suma.bind(this)}>{this.state.num}</button>
