@@ -21,7 +21,7 @@ class Counter extends Component {
   suma() {
     console.log(this.state.num);
 
-    this.setState({ num: this.state.num += this.props.step || 1,   fontSize: this.state.fontSize += 1  });
+    this.setState({ num: this.state.num += this.props.step || 1,   fontSize: this.state.fontSize += this.props.step || 1 });
     // fontSize=fontSize + 1 ;
     // console.log(this.state.num);
 
