@@ -1,0 +1,8 @@
+.Counter{
+    display:flex;
+    flex-direction: row; 
+    background: tomato;
+    /* width: 100%; */
+    border: 0.5rem black inset;
+    /* float: left; */
+}

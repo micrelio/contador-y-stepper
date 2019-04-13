@@ -14,6 +14,7 @@ class App extends Component {
           <Stepper text="Adults" max={10} min={0} valor={3} ></Stepper>
           <Stepper text="Niños" max={20} min={0} valor={0} ></Stepper>
           <Stepper text="Total" max={20} min={5} valor={25} ></Stepper>
+          
         </header>
       </div>
     );
