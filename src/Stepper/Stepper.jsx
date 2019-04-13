@@ -10,7 +10,7 @@ class Stepper extends Component {
             text: props.text || 0,
             min: props.min || 0,
             max: props.max || 0,
-            num: props.default || 0,
+            num: props.valor || 0,
         }
     }
 
@@ -19,15 +19,17 @@ class Stepper extends Component {
 //modificamos
 suma() {
   console.log(this.state.num);
-
+if(this.state.num<this.state.max){
  
-       this.setState({num: this.state.num +1})
+       this.setState({num: this.state.num += 1})
+}
        
 }
 
 resta(){
-
-     this.setState({num: this.state.num -1});
+  if(this.state.num > this.state.min){
+     this.setState({num: this.state.num -=1});
+}
 }
 
 

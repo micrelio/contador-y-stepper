@@ -17,7 +17,7 @@ class Counter extends Component {
 
     suma(){
 
-        this.setState({num: this.state.num + this.props.step || 1});
+        this.setState({num: this.state.num += this.props.step || 1});
     }
 
 
