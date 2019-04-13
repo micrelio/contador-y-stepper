@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Stepper from './Stepper/Stepper';
 import Counter from './Counter/Counter';
+import Reset from './Reset/Reset';
 class App extends Component {
   render() {
     return (
@@ -14,6 +15,7 @@ class App extends Component {
           <Stepper text="Adults" max={10} min={0} valor={3} ></Stepper>
           <Stepper text="Niños" max={20} min={0} valor={0} ></Stepper>
           <Stepper text="Total" max={20} min={5} valor={25} ></Stepper>
+          <Reset/>
           
         </header>
       </div>
