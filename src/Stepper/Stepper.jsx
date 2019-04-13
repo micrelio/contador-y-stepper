@@ -7,7 +7,7 @@ class Stepper extends Component {
     constructor(props) {
         super(props); 
         this.state = {
-            text: props.text || 0,
+            text: props.text,
             min: props.min || 0,
             max: props.max || 0,
             num: props.valor || 0,
@@ -38,7 +38,7 @@ render() {
        return (
           <div className="Stepper">
             <button onClick={this.suma.bind(this)}>+</button>
-            <span className="spanStepper"> {this.state.num} </span>
+            <span className="spanStepper">{this.props.text} {this.state.num} </span>
             <button onClick={this.resta.bind(this)}>-</button>
           </div>
         );
