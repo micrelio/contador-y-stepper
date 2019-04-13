@@ -3,7 +3,13 @@
     flex-direction: row; 
     background: tomato;
     /* width: 100%; */
-    border: 0.5rem black inset;
+    border: 3px black inset;
     /* float: left; */
-    font-size: 12rem;
+    /* font-size: 12rem; */
+}
+.reset{
+font-size: 20px;
+color:black;
+background-color: gray;
+border: 2px black inset;
 }
