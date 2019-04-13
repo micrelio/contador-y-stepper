@@ -18,7 +18,7 @@ class Stepper extends Component {
     
 //modificamos
 suma() {
-  console.log(this.state.num);
+ // console.log(this.state.num);
 if(this.state.num<this.state.max){
  
        this.setState({num: this.state.num += 1})
@@ -29,16 +29,31 @@ if(this.state.num<this.state.max){
 resta(){
   if(this.state.num > this.state.min){
      this.setState({num: this.state.num -=1});
-}
+     console.log(this.state.num)
 }
 
+
+}
 
 //devolver vista
-render() {
+render() { 
+  let backgroundColor='';
+  let style= {backgroundColor};
+  if(this.state.num>5){
+    backgroundColor='green'
+  }
+  // let style = backgroundColor;
+  // console.log(backgroundColor);
+  
+  // if(this.state.num==0 ) {
+    
+
+  
+  // }
        return (
           <div className="Stepper">
             <button onClick={this.suma.bind(this)}>+</button>
-            <span className="spanStepper">{this.props.text} {this.state.num} </span>
+            <span style={style} className="spanStepper">{this.props.text}: {this.state.num} </span>
             <button onClick={this.resta.bind(this)}>-</button>
           </div>
         );
