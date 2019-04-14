@@ -1,8 +1,6 @@
 import './Counter.css';
-
-import Reset from '../Reset/Reset'
+import Reset from '../Reset/Reset';
 import React, { Component } from 'react';
-
 // let fontSize = 17;
 
 //Aqui se crea la vista para mostrar
@@ -36,14 +34,16 @@ class Counter extends Component {
   //devolver vista
   render() {
     let style = { fontSize: this.state.fontSize + "px", };
-    if (this.state.num === 0) {
+    if (this.state.num === 0 ) {
+      
       style = { fontSize: this.state.fontSize + "px", backgroundColor: this.state.backgroundColor = 'red' };
     }
 
     return (
       <span className="Counter">
         <button style={style} onClick={this.suma.bind(this)}>{this.state.num}</button>
-        <buton className="reset" onClick={this.reset.bind(this)}>R</buton>
+        <button className="reset" onClick={this.reset.bind(this)}>R</button>
+        
 
       </span>
     );

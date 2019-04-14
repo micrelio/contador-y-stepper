@@ -1,7 +1,7 @@
 import './Reset.css';
-import Counter from '../Counter/Counter'
 
 import React, { Component } from 'react';
+import Counter from '../Counter/Counter.jsx';
 
 // let fontSize = 17;
 
@@ -18,7 +18,7 @@ class Reset extends Component {
     }
   }
 
- 
+
 
   reset() {
     console.log(this.state.num)
@@ -31,16 +31,12 @@ class Reset extends Component {
   render() {
     let style = { fontSize: this.state.fontSize + "px", };
     if (this.state.num === 0) {
-      console.log(style)
-
+      console.log()
       style = { fontSize: this.state.fontSize + "px", backgroundColor: this.state.backgroundColor = 'red' };
     }
 
     return (
-      
-        <button className="reset"  onClick={this.reset.bind(this)}>Reset</button>
-
-     
+      <button className="hReset" onClick={this.reset.bind(this)}>Reset</button>
     );
   }
 

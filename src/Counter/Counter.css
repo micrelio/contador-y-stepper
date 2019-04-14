@@ -1,11 +1,14 @@
 .Counter{
     display:flex;
-    flex-direction: row; 
-    background: tomato;
+    flex-direction: column;
+justify-content: flex-end;     
+    /* background: tomato ; */
     /* width: 100%; */
-    border: 3px black inset;
+    /* border: 3px black inset; */
     /* float: left; */
     /* font-size: 12rem; */
+    margin:3px;
+    bottom: 0;
 }
 .reset{
 font-size: 20px;
