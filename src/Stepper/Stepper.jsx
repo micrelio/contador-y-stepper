@@ -49,7 +49,7 @@ class Stepper extends Component {
     }
     else if (this.state.num === 20) {
       //  window.open(<img src="dinosaur.jpg">,"","width=550,height=420")
-      window.open("src='./images/boom.gif'", "", "width=550,height=420")
+      window.open("/images/boom.gif", "", "width=550,height=420")
       // window.open("href='./public/images/boom.gif'","","width=550,height=420")
 
     }
@@ -70,7 +70,7 @@ class Stepper extends Component {
     return (
       <div className="Stepper">
         <button onClick={this.suma.bind(this)}>+</button>
-        <span style={style} className="spanStepper">{this.props.text}: {this.state.num} </span>
+        <span style={style} className="spanStepper">{this.props.text}:{this.state.num} </span>
         <button onClick={this.resta.bind(this)}>-</button>
       </div>
     );
