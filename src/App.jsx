@@ -1,26 +1,33 @@
 import React, { Component } from 'react';
-import './App.css';
-import Stepper from './Stepper/Stepper';
-import Counter from './Counter/Counter';
-import Reset from './Reset/Reset';
+import { Router, Redirect } from '@reach/router';
+import './App.scss';
+// import NotFound from './components/NotFound';
+
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
+import Stepper2 from './views/Stepper/Stepper2';
+import Counter2 from './views/Counter/Counter2';
+import Login from './views/Login/Login';
+
 class App extends Component {
   render() {
     return (
       //Se crea el modelo del controlador con sus valores
       <div className="App">
-        <header className="App-header">
-        <div className="counter">
-          <Counter back_color="red"></Counter> 
-          <Counter startFrom={100}></Counter> 
-          <Counter step={5}></Counter>
-          </div>
-          <div>
-            <Stepper text="Adults" max={10} min={0} valor={0} ></Stepper>
-          <Stepper text="Niños" max={20} min={0} valor={0} ></Stepper>
-          <Stepper text="XXX" max={20} min={5} valor={0} ></Stepper>
-          <Reset/>
-          </div>
-        </header>
+        <Navigation />
+       
+        
+          <header className="App-header">
+           <Router className='main'>
+          <Stepper2 /*path='./views/Stepper/Stepper2'*/ />
+          <Counter2/>
+          {/* <NotFound path='notFound' /> */}
+          <Login />
+            </Router>
+           
+          </header>
+        
+        <Footer />
       </div>
     );
   }

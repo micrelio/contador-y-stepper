@@ -1,0 +1,18 @@
+ 
+.Stepper button{
+    font-size: 1vw;
+    background-color: yellow;
+}
+.spanStepper {
+    border: 0.5rem black inset;
+    width: 15vw;
+    background-color: wheat;
+    color: black;
+
+}
+.Stepper{
+    display:flex;
+    flex:table-column; 
+    justify-content: center;
+ 
+} 

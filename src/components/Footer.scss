@@ -1,0 +1,16 @@
+.Footer {
+    // height: 10rem;;
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    padding: 2em;
+    background: {
+        color:black;
+        image: url('/images/degradado.jpg');
+        // size: cover;
+    }
+    a {
+    color:white;
+
+    }
+}
