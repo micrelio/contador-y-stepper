@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Redirect } from '@reach/router';
+// import { Router, Redirect } from '@reach/router';
 import './App.scss';
 // import NotFound from './components/NotFound';
 
@@ -18,12 +18,12 @@ class App extends Component {
        
         
           <header className="App-header">
-           <Router className='main'>
+           {/* <Router className='main'> */}
           <Stepper2 /*path='./views/Stepper/Stepper2'*/ />
           <Counter2/>
           {/* <NotFound path='notFound' /> */}
           <Login />
-            </Router>
+            {/* </Router> */}
            
           </header>
         
