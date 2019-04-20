@@ -19,11 +19,12 @@ class App extends Component {
 
         <header className="App-header">
           <Router className='main'>
-          {/* <Counter2 /> */}
-          <Stepper2 path='./views/Stepper/Stepper2' />
+          <Counter2 path='/counter' />
+          <Stepper2 path='/stepper' />
 
           <NotFound path='notFound' />
-          {/* <Login /> */}
+          <Login path='/login' />
+          {/* <Redirect default from='*' to='Stepper2' no throw /> */}
           </Router>
 
         </header>
