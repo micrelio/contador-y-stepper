@@ -6,17 +6,17 @@ class Login extends React.Component {
         return (
             //Se crea el modelo del controlador con sus valores
             <div className="Login">
-                <div class="unico">
+                <div className="unico">
                     {/* <img src="../images/haway.jpg " style=" no-repeat top  fixed" alt=""/>  */}
-                    <h1>LOGIN VIEW</h1>
-                    {/* <br /> */}
-                    <div class="formulario">
+                    <h1>LOGIN</h1>
+                    <br />
+                    <div className="formulario">
                         <form action="/login" method="post">
 
                             <input type="email" name="email" placeholder="email" />
                             <input type="password" name="password" placeholder="password" />
-                            {/* <br /> */}
-                            <input class="iniciar" type="submit" value="login!" />
+                            <br />
+                            <input className="iniciar" type="submit" value="login!" />
                         </form>
                     </div>
                 </div>

@@ -1,0 +1,51 @@
+.registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -7rem;
+    padding: 11.5%;
+    z-index: 5;
+
+    background: {
+        // image: url('/images/fondoazul.jpg ');
+        size: cover;
+    }
+
+    h1 {
+        font-size: calc(2.5rem + 1vw);
+        color: black;
+    }
+
+    form {
+        // color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // background: rgba(0, 0, 0, .7);
+        padding: 3rem;
+        font-size: 1rem;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+
+        }
+
+        .iniciar {
+            background: orange;
+            padding: 0.2rem;
+            min-width: 5rem;
+
+
+            //  input {
+            //      width: 155vw; 
+            //     margin: 0.5rem;
+
+            // }
+        }
+    }
+}
+
+// }}

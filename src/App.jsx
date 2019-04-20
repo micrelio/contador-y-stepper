@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Stepper2 from './views/Stepper/Stepper2';
 import Counter2 from './views/Counter/Counter2';
 import Login from './views/Login/Login';
+import Register from './views/Register/Register';
 
 class App extends Component {
   render() {
@@ -21,7 +22,7 @@ class App extends Component {
           <Router className='main'>
           <Counter2 path='/counter' />
           <Stepper2 path='/stepper' />
-
+          <Register path='/register'/>
           <NotFound path='notFound' />
           <Login path='/login' />
           {/* <Redirect default from='*' to='Stepper2' no throw /> */}

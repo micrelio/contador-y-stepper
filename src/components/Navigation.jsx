@@ -7,10 +7,10 @@ class Navigation extends React.Component {
     return (
       //Se crea el modelo del controlador con sus valores
       <div className="Navigation">
-        <Link to='/login'>Login</Link>
-        <Link to='/movies/upcoming'>Register</Link>
-        <Link to='/stepper'>Stepper</Link>
-        <Link to='/counter'>Counter</Link>
+        <Link to='/login'><strong>Login</strong></Link>
+        <Link to='/register'><strong>Register</strong></Link>
+        <Link to='/stepper'><strong>Stepper</strong></Link>
+        <Link to='/counter'><strong>Counter</strong></Link>
 
 
 
