@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-// import { Router, Redirect } from '@reach/router';
+import { Router, Redirect } from '@reach/router';
 import './App.scss';
-// import NotFound from './components/NotFound';
+import NotFound from './components/NotFound';
 
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
@@ -15,18 +15,19 @@ class App extends Component {
       //Se crea el modelo del controlador con sus valores
       <div className="App">
         <Navigation />
-       
-        
-          <header className="App-header">
-           {/* <Router className='main'> */}
-          <Stepper2 /*path='./views/Stepper/Stepper2'*/ />
-          <Counter2/>
-          {/* <NotFound path='notFound' /> */}
-          <Login />
-            {/* </Router> */}
-           
-          </header>
-        
+
+
+        <header className="App-header">
+          <Router className='main'>
+          {/* <Counter2 /> */}
+          <Stepper2 path='./views/Stepper/Stepper2' />
+
+          <NotFound path='notFound' />
+          {/* <Login /> */}
+          </Router>
+
+        </header>
+
         <Footer />
       </div>
     );

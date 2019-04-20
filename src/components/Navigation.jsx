@@ -9,6 +9,8 @@ class Navigation extends React.Component {
         <div className="Navigation">
         <button >Login</button>
         <button >Register</button>
+        <button >Stepper</button>
+        <button >Counter</button>
         
       
         </div>
