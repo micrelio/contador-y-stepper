@@ -5,10 +5,10 @@ class Register extends React.Component {
     render() {
         return (
             <div className="registro">
- <h1>REGISTER</h1>
                 {/* <br /> */}
                 <div className="formulario">
-                   
+                <h1>REGISTER</h1>
+
                     <form action="/registro" method="post" >
                         <input type="nik" name="nik" placeholder="nik" />
                         <input type="email" name="email" placeholder="email" />
@@ -28,7 +28,7 @@ class Register extends React.Component {
 
                         </select>
                         <div>
-                            <input type="radio" name="mayor" value="+18" />No Publi
+                            <input type="radio" name="mayor" value="+18" />Publi
                         {/* <br/> */}
                         </div>
                         <input className="iniciar" type="submit" value="registrarme!" />
