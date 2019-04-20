@@ -11,7 +11,7 @@ class Login extends React.Component {
                     <h1>LOGIN</h1>
                     <br />
                     <div className="formulario">
-                        <form action="/login" method="post">
+                        <form action="/login" method="get">
 
                             <input type="email" name="email" placeholder="email" />
                             <input type="password" name="password" placeholder="password" />
