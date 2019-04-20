@@ -1,18 +1,19 @@
-.Counter{
-    display:flex;
+.Counter {
+    display: flex;
     flex-direction: column;
-justify-content: flex-end;     
+    justify-content: flex-end;
     /* background: tomato ; */
     /* width: 100%; */
     /* border: 3px black inset; */
     /* float: left; */
     /* font-size: 12rem; */
-    margin:3px;
+    margin: 3px;
     bottom: 0;
 }
-.reset{
-font-size: 20px;
-color:black;
-background-color: gray;
-border: 2px black inset;
+
+.reset {
+    font-size: 20px;
+    color: black;
+    background-color: gray;
+    border: 2px black inset;
 }

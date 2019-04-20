@@ -16,20 +16,16 @@ class App extends Component {
       //Se crea el modelo del controlador con sus valores
       <div className="App">
         <Navigation />
-
-
         <header className="App-header">
           <Router >
-          <Counter2 path='/counter' />
-          <Stepper2 path='/stepper' />
-          <Register path='/register'/>
-          <NotFound path='notFound' />
-          <Login path='/login' />
-          <Redirect default from='*' to='login' no throw />
+            <Counter2 path='/counter' />
+            <Stepper2 path='/stepper' />
+            <Register path='/register' />
+            <NotFound path='notFound' />
+            <Login path='/login' />
+            <Redirect default from='*' to='login' no throw />
           </Router>
-
         </header>
-
         <Footer />
       </div>
     );

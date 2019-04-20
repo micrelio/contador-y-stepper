@@ -33,8 +33,8 @@ class Counter extends Component {
   //devolver vista
   render() {
     let style = { fontSize: this.state.fontSize + "px", };
-    if (this.state.num === 0 ) {
-      
+    if (this.state.num === 0) {
+
       style = { fontSize: this.state.fontSize + "px", backgroundColor: this.state.backgroundColor = 'red' };
     }
 
@@ -42,7 +42,7 @@ class Counter extends Component {
       <span className="Counter">
         <button style={style} onClick={this.suma.bind(this)}>{this.state.num}</button>
         <button className="reset" onClick={this.reset.bind(this)}>R</button>
-        
+
 
       </span>
     );

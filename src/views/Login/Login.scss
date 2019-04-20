@@ -6,10 +6,12 @@
     // background: url('../images/back.jpeg ');
     // background-size: cover;
 }
-.unico h1{
-font-size: calc(2.5rem + 1vw);
-color: black;
+
+.unico h1 {
+    font-size: calc(2.5rem + 1vw);
+    color: black;
 }
+
 form {
     display: flex;
     flex-direction: column;

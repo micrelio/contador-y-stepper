@@ -21,23 +21,23 @@ class Login extends React.Component {
                     </div>
                 </div>
             </div>
-//             <div class="feedback">
+            //             <div class="feedback">
 
-//                 {{#if error}}
-//     <div class="error">
-//         {{error}}
-//     </div>
-//     {{/if}}
+            //                 {{#if error}}
+            //     <div class="error">
+            //         {{error}}
+            //     </div>
+            //     {{/if}}
 
 
-//     {{#if message}}
-//     <div class="message">
-//         {{message}}
-//     </div>
-//     {{/if}}
-// </div>
-//             </div>
-                );
+            //     {{#if message}}
+            //     <div class="message">
+            //         {{message}}
+            //     </div>
+            //     {{/if}}
+            // </div>
+            //             </div>
+        );
     }
 }
 

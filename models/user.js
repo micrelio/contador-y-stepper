@@ -4,7 +4,7 @@ const UserSchema = new mongoose.Schema({
     nik: {
         type: String,
         required: true,
-    },    
+    },
     email: {
         type: String,
         required: true,
@@ -27,9 +27,9 @@ const UserSchema = new mongoose.Schema({
         type: Boolean,
         value: true,
     }
-    
-    
-  
+
+
+
 
 });
 

@@ -7,14 +7,14 @@ import './Stepper.scss';
 
 //Aqui se crea la vista para mostrar inicializando los valores
 class Stepper2 extends React.Component {
-  
+
 
   //devolver vista
   render() {
-    
+
 
     return (
-        <div>
+      <div>
         <Stepper text="Adults" max={10} min={0} valor={0} ></Stepper>
         <Stepper text="Niños" max={20} min={0} valor={0} ></Stepper>
         <Stepper text="XXX" max={20} min={5} valor={0} ></Stepper>

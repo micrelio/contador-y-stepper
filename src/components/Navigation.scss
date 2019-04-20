@@ -2,16 +2,18 @@
     display: flex;
     justify-content: center;
     background: black;
-    color:white;
+    color: white;
     padding: 2em;
+
     background: {
-        color:black;
+        color: black;
         image: url('/images/degradado.jpg');
         // size: cover;
     }
+
     a {
-        margin:1rem;
-        color :black;
+        margin: 1rem;
+        color: black;
         text-decoration: none;
 
 
